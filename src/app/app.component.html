@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>{{ title }}</h1>
+</div>
+
+<h2>Détails sur {{ personne.nom }} {{ personne.prenom }}</h2>
+<ul>
+  <li (click)="clickEffectue()"><b>Nom : </b>{{ personne.nom }}</li>
+  <li><b>Prénom : </b>{{ personne.prenom }}</li>
+  <li><b>Travail principal : </b> {{ personne.travail }}  </li>
+  <li><b>Description : </b>{{ personne.description }}</li>
+</ul>
+
+<h2>Modification</h2>
+<form (ngSubmit)="onsubmit()"></form>
+<ul>
+  <li><b>Nom</b> </li>
+  <li><input [(ngModel)]="personne.nom" /></li>
+  <li><b>Prénom</b> </li>
+  <li><input [(ngModel)]="personne.prenom" /></li>
+  <li><b>Travail principal</b> </li>
+  <li><input [(ngModel)]="personne.travail" /></li>
+  <li><b>Description</b></li>
+  <li><textarea [(ngModel)]="personne.description"></textarea></li>
+  <li><input type="submit" value="valider" class="button"></li>
+</ul>
+

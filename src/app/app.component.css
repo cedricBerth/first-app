@@ -1,0 +1,14 @@
+ul, li{
+  list-style: none;
+}
+
+li{ margin-bottom: 10px; }
+
+*{ font-family: sans-serif;  }
+
+textarea{
+  width: 250px;
+  height: 200px;
+}
+
+input:not(.button){ width: 250px; }
